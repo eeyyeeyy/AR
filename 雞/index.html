@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="雞.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" auto-rotate>
+      <button class="Hotspot" slot="hotspot-1" data-position="-0.02665256021620444m 0.2124996481677581m -0.3390328827486105m" data-normal="0.47832571417332975m 0.27118513313626486m -0.8352623149205526m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">雞頭</div>
+      </button><button class="Hotspot" slot="hotspot-2" data-position="0.2847405408115183m 0.2514074961899366m -0.046858655405267235m" data-normal="0.4101622858121385m 0.48468770944050726m -0.7725572623532032m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">雞翅</div>
+      </button><button class="Hotspot" slot="hotspot-4" data-position="0.32260341651522983m -0.08709852840763732m -0.1688993890349177m" data-normal="0.7522444298203399m 0.2551883894863198m -0.607459631313596m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">雞腿</div>
+      </button><button class="Hotspot" slot="hotspot-5" data-position="0.040642284542139306m 0.0859801621827535m -0.2579391291187252m" data-normal="0.2517196937206889m 0.47915114229971956m -0.8408634720488438m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">雞胸</div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+  </body>
+</html>
